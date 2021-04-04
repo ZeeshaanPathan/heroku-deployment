@@ -40,8 +40,8 @@ def predict():
     location = reqParam['location']
     bhk = reqParam['bhk']
     furnishing = reqParam['furnishing']
-    area = reqParam['area']
-    old = reqParam['old']
+    area = reqParam['totalarea']
+    old = reqParam['yearsold']
     floor = reqParam['floor']
     
     returnJson = {}
@@ -51,8 +51,8 @@ def predict():
             location,
             bhk,
             furnishing,
-            area,
-            old,
+            totalarea,
+            yearsold,
             floor,
         ]]
     )[0]
